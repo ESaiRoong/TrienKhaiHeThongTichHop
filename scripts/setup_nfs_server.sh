@@ -8,8 +8,8 @@ title() { echo -e "\n${BLUE}${BOLD}==> $1${NC}"; }
 [[ $EUID -ne 0 ]] && error "Cần quyền root"
 
 NFS_EXPORT="/srv/nfs/wordpress"
-WEB01_IP="10.10.40.151"
-WEB02_IP="10.10.40.152"
+WEB01_IP="10.10.40.161"
+WEB02_IP="10.10.40.162"
 
 title "Bước 1: Cài NFS Server"
 if [ -f /etc/debian_version ]; then
